@@ -124,7 +124,7 @@
 #X coords 0 1 4.97449e+06 -1 178 123 1;
 #X restore 248 589 graph;
 #X text 953 762 pitch control system;
-#N canvas 0 22 450 300 startup_settings 1;
+#N canvas 0 22 450 300 startup_settings 0;
 #X obj 255 515 loadbang;
 #X msg 167 541 1;
 #X msg 539 539 0;
@@ -250,6 +250,9 @@
 #X msg 999 827 0.5;
 #X obj 999 853 s currentPitch;
 #X obj 671 748 spigot;
+#X obj 954 156 sel 1;
+#X obj 953 124 change;
+#X obj 953 98 r sw5_press @hv_param;
 #X connect 4 0 5 0;
 #X connect 5 0 1 0;
 #X connect 8 0 9 0;
@@ -326,3 +329,6 @@
 #X connect 84 0 81 0;
 #X connect 87 0 88 0;
 #X connect 89 0 86 0;
+#X connect 90 0 27 0;
+#X connect 91 0 90 0;
+#X connect 92 0 91 0;
